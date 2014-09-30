@@ -16,7 +16,7 @@ echo "ChromeStats v1.0"
 while [ $isOnline = 0 ] && (( $connectionCount < 10 ))
 do
     # Check if we're online by pinging.
-    isOnline=$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo 1 || echo 0)
+    isOnline=$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` &> /dev/null && echo 1 || echo 0)
 
     if [ $isOnline = 0 ]
     then
