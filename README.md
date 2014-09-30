@@ -9,6 +9,13 @@ ChromeStats works by reading the total number of installs for your extension and
 
 ChromeStats makes it easy to automate the collection of total installs for your Chrome extension. Run the script at startup, collect data for a weeks or months, and chart the results! Watch your total user count grow (or decline :O) over time.
 
+Example Output
+---
+
+```javascript
+{ 'Url': 'https://chrome.google.com/webstore/detail/your-app-name/abcdefghijklmnopqrstuvwxyz?hl=en', 'EventDate': ISODate('2014-09-29T22:59:56Z'), 'Users': 25621 }
+```
+
 Install
 ---
 
