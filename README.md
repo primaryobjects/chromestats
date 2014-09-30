@@ -4,6 +4,8 @@ ChromeStats
 
 ChromeStats collects total user install counts for your Chrome extension in the Google Chrome store.
 
+![Screenshot 1](https://raw.githubusercontent.com/primaryobjects/chromestats/master/images/chromestats-1.png)
+
 ChromeStats works by reading the total number of installs for your extension and saving the count to a Mongo database. Each entry includes a date/time stamp and total install count. Run the script at startup, collect data over time, and watch your total user count grow (or decline :O) over time.
 
 Example Output
