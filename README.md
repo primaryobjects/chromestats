@@ -1,6 +1,6 @@
 ChromeStats
 =========
-### for Linux
+### for Linux/Mac
 
 
 ChromeStats saves the daily total-user install count for your Chrome extension in the Google Chrome store. While the Chrome developer dashboard displays weekly user install counts, ChromeStats records the total user install count for all users currently using your extension.
