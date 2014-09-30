@@ -2,12 +2,9 @@ ChromeStats
 =========
 ### for Linux/Mac
 
+ChromeStats collects total user install counts for your Chrome extension in the Google Chrome store.
 
-ChromeStats saves the daily total-user install count for your Chrome extension in the Google Chrome store. While the Chrome developer dashboard displays weekly user install counts, ChromeStats records the total user install count for all users currently using your extension.
-
-ChromeStats works by reading the total number of installs for your extension and saving the count to a Mongo database. Each entry includes a date/time stamp and total install count.
-
-ChromeStats makes it easy to automate the collection of total installs for your Chrome extension. Run the script at startup, collect data for a weeks or months, and chart the results! Watch your total user count grow (or decline :O) over time.
+ChromeStats works by reading the total number of installs for your extension and saving the count to a Mongo database. Each entry includes a date/time stamp and total install count. Run the script at startup, collect data over time, and watch your total user count grow (or decline :O) over time.
 
 Example Output
 ---
@@ -38,6 +35,21 @@ Install
  ```
 
 The script will collect your total user install count and save it to your mongo database, using the collection name "analytics".
+
+Running at Startup
+---
+
+You can automatically run the script at boot time by editing /etc/rc.local and adding an entry to run the script. It's a good idea to include logging of the output, so you know it's working.
+
+1. Edit /etc/rc.local and add the following lines towards the top of the file:
+ ```sh
+ # Log rc.local to tmp/rc.local.log
+ exec 2> /tmp/rc.local.log      # send stderr from rc.local to a log file
+ exec 1>&2                      # send stdout to the same log file
+ set -x
+ 
+ bash "/home/username/Documents/chromestats/chromestats.sh"
+ ```
 
 License
 ----
