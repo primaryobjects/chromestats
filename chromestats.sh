@@ -11,7 +11,7 @@ connectionString="$host -u $user -p $pass"
 isOnline=0
 connectionCount=0
 
-echo "ChromeStats v1.0"
+echo "ChromeStats v1.1"
 
 while [ $isOnline = 0 ] && (( $connectionCount < 10 ))
 do
@@ -45,7 +45,7 @@ then
 
         # Create json document.
         currentDate=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
-        document="{ 'Url': '$url', 'EventDate': ISODate('$currentDate'), 'Users': $count }"
+        document="{ 'EventDate': ISODate('$currentDate'), 'Users': $count }"
 
         # Insert the document into mongo.
         mongo $connectionString --eval "db.analytics.insert($document)"

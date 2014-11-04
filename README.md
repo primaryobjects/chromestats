@@ -12,8 +12,15 @@ Example Output
 ---
 
 ```javascript
-{ 'Url': 'https://chrome.google.com/webstore/detail/your-app-name/abcdefghijklmnopqrstuvwxyz?hl=en', 'EventDate': ISODate('2014-09-29T22:59:56Z'), 'Users': 25621 }
+{ 'EventDate': ISODate('2014-09-29T22:59:56Z'), 'Users': 25621 }
 ```
+
+Example Chart
+---
+
+An R script is also included, which allows you to chart the results on a graph. Or you can use your favorite graphing tool (Excel, Google Docs, etc). Here's an example.
+
+![Screenshot 2](https://raw.githubusercontent.com/primaryobjects/chromestats/master/images/analytics.png)
 
 Install
 ---
