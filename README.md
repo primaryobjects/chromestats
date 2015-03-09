@@ -48,7 +48,7 @@ Install
 
  Node.js
  ```sh
- cd ~/Documents/chromestats
+ cd C:\Users\your-user-name\Documents\chromestats\chromestats
  node chromestats
  ```
 
@@ -69,7 +69,11 @@ You can automatically run the script at boot time by editing /etc/rc.local and a
  bash "/home/username/Documents/chromestats/chromestats.sh"
  ```
 
-On Windows, include the run command in a batch file upon startup.
+On Windows, include the run command in a batch file upon startup. For example:
+ ```sh
+ @echo off
+ node C:\Users\your-user-name\Documents\chromestats\chromestats
+ ```
 
 License
 ----
