@@ -39,7 +39,12 @@ Install
  pass="mongo-password"
  ```
 
-3. Save the file and run it with:
+3. If you're using the node.js script, run the following command:
+ ```sh
+ npm install
+ ```
+
+4. Run the script:
 
  Bash
  ```sh
@@ -70,11 +75,20 @@ You can automatically run the script at boot time by editing /etc/rc.local and a
  bash "/home/username/Documents/chromestats/chromestats.sh"
  ```
 
-On Windows, include the run command in a batch file upon startup. For example:
+On Windows, do the following:
 
-run.bat
+1. Click Start->Run. If you're using Windows 8, right-click the Windows start-menu icon and select Run.
+
+2. Type: regedit
+
+3. Navigate to HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
+4. Right-click in the right-side window and select New->String Value.
+
+5. Enter the name: chromestats
+
+6. Double-click the newly created key "chromestats" and enter the following for its Value data:
  ```sh
- @echo off
  node C:\Users\your-user-name\Documents\chromestats\chromestats
  ```
 
