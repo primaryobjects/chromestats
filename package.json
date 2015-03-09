@@ -1,0 +1,12 @@
+{
+  "name": "chromeStats",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "*",
+    "mongodb": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  }
+}
