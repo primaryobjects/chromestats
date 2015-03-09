@@ -28,8 +28,7 @@ request(url, function(err, response, body) {
             count = parseInt(count.replace(/,/g, ''));
 
             // Create json document.
-            var currentDate = new Date();
-            var document = { EventDate: currentDate.toISOString(), Users: count };
+            var document = { EventDate: new Date(), Users: count };
 
             // Insert the document into mongo.
             MongoClient.connect(host, function(err, db) {
