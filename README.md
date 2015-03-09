@@ -40,6 +40,7 @@ Install
  ```
 
 3. Save the file and run it with:
+
  Bash
  ```sh
  cd ~/Documents/chromestats
