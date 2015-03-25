@@ -92,6 +92,11 @@ On Windows, do the following:
  node C:\Users\your-user-name\Documents\chromestats\chromestats
  ```
 
+Note, in Windows, you may want to wait for Internet access before running the script. You can use [wait4net.bat](http://paulhoule.com/wait4net/) to do this, and change the registry command to execute a batch file:
+```sh
+"C:\Users\your-user-name\Documents\wait4net.bat" start /log c:\temp\mongobackuplog.txt "C:\Users\your-user-name\Documents\chromestats.bat" > c:\temp\mongobackuplog2.txt
+```
+
 License
 ----
 
